@@ -1,0 +1,3 @@
+[submodule "mall-commodity-service"]
+	path = mall-commodity-service
+	url = git@github.com:Fast-Fast-Fast/mall-commodity-service.git
