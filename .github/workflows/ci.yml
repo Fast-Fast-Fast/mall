@@ -11,7 +11,7 @@ jobs:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: checkstyle
         run:
-          bash ./mall-scripts/ci/checkstyle.sh
+          bash $(pwd)/mall-scripts/ci/checkstyle.sh $(pwd)
   findbugs:
     name: Java Code Find Bugs
     runs-on: ubuntu-18.04
