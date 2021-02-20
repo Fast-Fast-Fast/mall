@@ -9,6 +9,9 @@ jobs:
         with:
           submodules: true
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - uses: reviewdog/action-setup@v1
+        with:
+          reviewdog_version: latest
       - name: checkstyle
         run:
           bash $(pwd)/mall-scripts/ci/checkstyle.sh $(pwd)
